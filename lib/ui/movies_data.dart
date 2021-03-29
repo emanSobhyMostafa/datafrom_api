@@ -31,9 +31,9 @@ class Moviescreen extends StatelessWidget {
 
                       return Moviewidget(movie: movie);
                     });
-              } else if (movieProvider.hasError) {
+              } else if (movieProvider.movies!=null) {
                 return Text("${movieProvider.error}");
-              })
+              });
               return Center(child: CircularProgressIndicator());
             }));
   }
