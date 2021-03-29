@@ -25,7 +25,7 @@ class Moviewidget extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.all(8),
                   child: Image.network(
-                    movie.url,
+                    movie.backdrop_path,
                     height: 100.0,
                     width: 100.0,
                   )),
