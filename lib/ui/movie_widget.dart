@@ -28,7 +28,7 @@ class Moviewidget extends StatelessWidget {
                     movie.poster_path,
                     height: 100.0,
                     width: 100.0,
-                  )['results']),
+                  )),
             ])));
   }
 }

@@ -7,7 +7,7 @@ class Movie {
     String originalTitle;
     String overview;
     double popularity;
-    String posterPath;
+    String poster_path;
     DateTime releaseDate;
     String title;
     bool video;
@@ -22,7 +22,7 @@ class Movie {
     this.originalTitle,
     this.overview,
     this.popularity,
-    this.posterPath,
+    this.poster_path,
     this.releaseDate,
     this.title,
     this.video,
@@ -40,7 +40,7 @@ class Movie {
       originalTitle: json["original_title"],
       overview: json["overview"],
       popularity: json["popularity"].toDouble(),
-      posterPath: json["poster_path"],
+      poster_path: json["poster_path"],
       releaseDate: DateTime.parse(json["release_date"]),
       title: json["title"],
       video: json["video"],
