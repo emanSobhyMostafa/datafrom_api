@@ -42,8 +42,8 @@ class _MoviescreenState extends State<Moviescreen> {
 
                       return Moviewidget(movie: movie);
                     });
-              } )else if (snapshot.hasError) {
-                return Text("${snapshot.error}");
+              } )else if (movieProvider.hasError) {
+                return Text("${movieProvider.error}");
               }
               return Center(child: CircularProgressIndicator());
             }));
