@@ -22,11 +22,7 @@ class Moviewidget extends StatelessWidget {
                   textAlign: TextAlign.center,
                 )),
               ),
-              Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Image.network(
-                    movie.poster_path,
-                  )),
+              Padding(padding: const EdgeInsets.all(8), child: Image.network(movie.poster_path, height: 100)),
             ])));
   }
 }
