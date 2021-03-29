@@ -30,7 +30,7 @@ class Moviescreen extends StatelessWidget {
                       final movie =movieProvider.movies[index];
 
                       return Moviewidget(movie: movie);
-                    });
+                    })
               :return Center(child: CircularProgressIndicator());
               })
               
