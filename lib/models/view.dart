@@ -1,9 +1,9 @@
 class Movie {
  bool adult;
     String backdrop_path;
-    List<int> genreIds;
+    List<int> genre_ids;
     int id;
-    String originalLanguage;
+    String original_language;
     String originalTitle;
     String overview;
     double popularity;
@@ -16,9 +16,9 @@ class Movie {
   Movie({
     this.adult,
     this.backdrop_path,
-    this.genreIds,
+    this.genre_ids,
     this.id,
-    this.originalLanguage,
+    this.original_language,
     this.originalTitle,
     this.overview,
     this.popularity,
@@ -34,9 +34,9 @@ class Movie {
     return Movie(
       adult: json["adult"],
       backdrop_path: json["backdrop_path"],
-      genreIds: List<int>.from(json["genre_ids"].map((a) => a)),
+      genre_ids: List<int>.from(json["genre_ids"].map((a) => a)),
       id: json["id"],
-      originalLanguage: json["original_language"],
+      original_language: json["original_language"],
       originalTitle: json["original_title"],
       overview: json["overview"],
       popularity: json["popularity"].toDouble(),

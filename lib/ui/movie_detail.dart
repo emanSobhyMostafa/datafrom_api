@@ -18,7 +18,7 @@ class Moviedetail extends StatelessWidget {
               SizedBox(
                 height: 12,
               ),
-              Text("albumId:${movie.albumId}"),
+              Text("overview:${movie.overview}"),
               SizedBox(
                 height: 12,
               ),
