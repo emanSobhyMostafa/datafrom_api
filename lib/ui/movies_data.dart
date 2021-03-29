@@ -11,10 +11,10 @@ class Moviescreen extends StatelessWidget {
   Moviescreen({Key key, this.title}) : super(key: key);
 
   final String title;
-}
+
 
   @override
-  Widget build(BuildContext bl7) {
+  Widget build(BuildContext ctx) {
     return Scaffold(
         appBar: AppBar(
           title: Text("movies"),
@@ -36,7 +36,7 @@ class Moviescreen extends StatelessWidget {
               })
               return Center(child: CircularProgressIndicator());
             }));
-  }
+  }}
 
 
 
