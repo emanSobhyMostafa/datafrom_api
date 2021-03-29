@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/view.dart';
+import 'package:http/http.dart' as http;
 
 Future<List<Movie>> fetchMovies() async {
   final response = await http.get(Uri.parse('https://api.androidhive.info/json/movies.json'));

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/view.dart';
 import 'dart:convert';
-import 'package:http/http.dart' as http;
 import './movie_widget.dart';
 import '../services/movie_service.dart';
 import '../provider/movie_provider.dart';
