@@ -1,6 +1,6 @@
 class Movie {
  bool adult;
-    String backdropPath;
+    String backdrop_path;
     List<int> genreIds;
     int id;
     String originalLanguage;
@@ -15,7 +15,7 @@ class Movie {
     int voteCount;
   Movie({
     this.adult,
-    this.backdropPath,
+    this.backdrop_path,
     this.genreIds,
     this.id,
     this.originalLanguage,
@@ -33,7 +33,7 @@ class Movie {
   factory Movie.fromJson(Map<String, dynamic> json) {
     return Movie(
       adult: json["adult"],
-      backdropPath: json["backdrop_path"],
+      backdrop_path: json["backdrop_path"],
       genreIds: List<int>.from(json["genre_ids"].map((a) => a)),
       id: json["id"],
       originalLanguage: json["original_language"],
@@ -48,19 +48,4 @@ class Movie {
       voteCount: json["vote_count"],
     );
   }
-   Map<String, dynamic> toJson() => {
-        "adult": adult,
-        "backdrop_path": backdropPath,
-        "genre_ids": List<dynamic>.from(genreIds.map((x) => x)),
-        "id": id,
-        "original_language": originalLanguage,
-        "original_title": originalTitle,
-        "overview": overview,
-        "popularity": popularity,
-        "poster_path": posterPath,
-        "release_date": "${releaseDate.year.toString().padLeft(4, '0')}-${releaseDate.month.toString().padLeft(2, '0')}-${releaseDate.day.toString().padLeft(2, '0')}",
-        "title": title,
-        "video": video,
-        "vote_average": voteAverage,
-        "vote_count": voteCount,
 }
