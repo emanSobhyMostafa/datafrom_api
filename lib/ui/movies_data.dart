@@ -5,6 +5,8 @@ import './movie_widget.dart';
 import '../services/movie_service.dart';
 import '../provider/movie_provider.dart';
 import 'package:provider/provider.dart';
+
+
 class Moviescreen extends StatelessWidget {
   Moviescreen({Key key, this.title}) : super(key: key);
 
@@ -29,9 +31,9 @@ class Moviescreen extends StatelessWidget {
 
                       return Moviewidget(movie: movie);
                     });
-              } )else if (movieProvider.hasError) {
+              } else if (movieProvider.hasError) {
                 return Text("${movieProvider.error}");
-              }
+              })
               return Center(child: CircularProgressIndicator());
             }));
   }
