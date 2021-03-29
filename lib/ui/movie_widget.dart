@@ -24,10 +24,9 @@ class Moviewidget extends StatelessWidget {
               ),
               Padding(
                   padding: const EdgeInsets.all(8),
-                  child: Image(
-                      image: NetworkImage(
+                  child: Image.network(
                     movie.poster_path,
-                  ))),
+                  )),
             ])));
   }
 }
