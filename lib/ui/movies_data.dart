@@ -22,15 +22,14 @@ class _MoviescreenState extends State<Moviescreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-
+  Widget build(BuildContext bl7) {
     return Scaffold(
         appBar: AppBar(
           title: Text("movies"),
         ),
         body: FutureBuilder<List<Movie>>(
             future: futerMovies,
-            builder: (context, snapshot) {
+            builder: (bl7, snapshot) {
               if (snapshot.hasData) {
                 final movies = snapshot.data;
                 return ListView.builder(
