@@ -23,7 +23,7 @@ class Moviescreen extends StatelessWidget {
             create:(context)=>Moviesprovider(),
             child:Consumer<Moviesprovider>(
             builder: (buildContext, movieProvider,_) {
-              return (movieProvider.movies!=null) : 
+              return (movieProvider.movies !=null)? 
                  ListView.builder(
                     itemCount: movieProvider.movies.length,
                     itemBuilder: (ctx, index) {
