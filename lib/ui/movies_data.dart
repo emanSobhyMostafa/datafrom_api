@@ -16,11 +16,11 @@ class Moviescreen extends StatefulWidget {
 class _MoviescreenState extends State<Moviescreen> {
   Future<List<Movie>> futerMovies;
 
-  @override
-  void initState() {
-    super.initState();
-    futerMovies = fetchMovies();
-  }
+//   @override
+//   void initState() {
+//     super.initState();
+//     futerMovies = fetchMovies();
+//   }
 
   @override
   Widget build(BuildContext bl7) {
