@@ -35,6 +35,6 @@ class Moviescreen extends StatelessWidget {
               return Center(child: CircularProgressIndicator());
             }));
   }
-}
+
 
 
