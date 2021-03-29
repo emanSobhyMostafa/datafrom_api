@@ -5,22 +5,11 @@ import './movie_widget.dart';
 import '../services/movie_service.dart';
 import '../provider/movie_provider.dart';
 import 'package:provider/provider.dart';
-class Moviescreen extends StatefulWidget {
+class Moviescreen extends StatelessWidget {
   Moviescreen({Key key, this.title}) : super(key: key);
 
   final String title;
-  @override
-  _MoviescreenState createState() => _MoviescreenState();
 }
-
-class _MoviescreenState extends State<Moviescreen> {
-  Future<List<Movie>> futerMovies;
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     futerMovies = fetchMovies();
-//   }
 
   @override
   Widget build(BuildContext bl7) {
