@@ -32,10 +32,9 @@ class _MoviescreenState extends State<Moviescreen> {
             create:(context)=>Moviesprovider(),
             child:Consumer<Moviesprovider>(
             builder: (buildContext, movieProvider,_) {
-              if (movieProvider.hasData) {
-                final movies = snapshot.data;
+              if (movieProvider.movies!=null) {
                 return ListView.builder(
-                    itemCount: movies.length,
+                    itemCount: movieProvider.movies.length,
                     itemBuilder: (ctx, index) {
                       final movie =movieProvider.movies[index];
 
