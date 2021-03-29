@@ -27,8 +27,6 @@ class Moviewidget extends StatelessWidget {
                   child: Image(
                       image: AssetImage(
                     movie.poster_path,
-                    height: 100.0,
-                    width: 100.0,
                   ))),
             ])));
   }
