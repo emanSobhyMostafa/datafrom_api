@@ -23,19 +23,18 @@ class Moviescreen extends StatelessWidget {
             create:(context)=>Moviesprovider(),
             child:Consumer<Moviesprovider>(
             builder: (buildContext, movieProvider,_) {
-              if (movieProvider.movies!=null) {
-                return ListView.builder(
+              return (movieProvider.movies!=null) : 
+                 ListView.builder(
                     itemCount: movieProvider.movies.length,
                     itemBuilder: (ctx, index) {
                       final movie =movieProvider.movies[index];
 
                       return Moviewidget(movie: movie);
                     });
-              } else if (movieProvider.movies!=null) {
-                return Text("${movieProvider.posts.error}");
+              :return Center(child: CircularProgressIndicator());
               })
-              return Center(child: CircularProgressIndicator());
-            }));
+              
+            );
   }}
 
 
