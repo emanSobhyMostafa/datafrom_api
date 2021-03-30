@@ -16,4 +16,9 @@ class Moviesprovider extends ChangeNotifier {
       notifyListeners();
     });
   }
+  void addToFav(Movie movie){
+      movie.isFav != movie.isFav;
+      notifyListeners();
+
+  }
 }

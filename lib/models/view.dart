@@ -1,18 +1,19 @@
 class Movie {
- bool adult;
-    String backdrop_path;
-    List<int> genre_ids;
-    int id;
-    String original_language;
-    String originalTitle;
-    String overview;
-    double popularity;
-    String poster_path;
-    DateTime releaseDate;
-    String title;
-    bool video;
-    double voteAverage;
-    int voteCount;
+  bool isFav;
+  bool adult;
+  String backdrop_path;
+  List<int> genre_ids;
+  int id;
+  String original_language;
+  String originalTitle;
+  String overview;
+  double popularity;
+  String poster_path;
+  DateTime releaseDate;
+  String title;
+  bool video;
+  double voteAverage;
+  int voteCount;
   Movie({
     this.adult,
     this.backdrop_path,
