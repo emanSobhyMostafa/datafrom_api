@@ -25,6 +25,6 @@ class Moviedetail extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ]),
-            child: IconButton(icon: Icon(Icons.bluetooth))));
+             IconButton(icon: Icon(Icons.bluetooth))));
   }
 }
