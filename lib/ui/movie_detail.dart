@@ -24,7 +24,6 @@ class Moviedetail extends StatelessWidget {
                 "movie title is:${movie.title}",
                 textAlign: TextAlign.center,
               ),
-            ]),
-             )));
+            ])));
   }
 }
