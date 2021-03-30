@@ -26,7 +26,7 @@ class Moviedetail extends StatelessWidget {
               ),
               new IconButton(
                 icon: Icon(Icons.star),
-                color: _rating >= 1 ? Colors.orange : Colors.grey,
+                color: isFav ? Colors.orange : Colors.grey,
               )
             ])));
   }
