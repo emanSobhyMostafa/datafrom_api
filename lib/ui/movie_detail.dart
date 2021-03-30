@@ -24,8 +24,8 @@ class Moviedetail extends StatelessWidget {
                 "movie title is:${movie.title}",
                 textAlign: TextAlign.center,
               ),
-              IconButton(
-                icon: Icon(Icons.add),
+              new IconButton(
+                icon: Icon(Icons.star),
               )
             ])));
   }
