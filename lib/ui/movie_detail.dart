@@ -10,6 +10,9 @@ class Moviedetail extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("Moviedetails"),
+          actions:[
+              
+          ]
         ),
         body: Padding(
             padding: const EdgeInsets.all(8),

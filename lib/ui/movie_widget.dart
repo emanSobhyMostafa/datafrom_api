@@ -18,7 +18,7 @@ class Moviewidget extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 child: Center(
                     child: Text(
-                  movie.title,
+                  movie.poster_path,
                   textAlign: TextAlign.center,
                 )),
               ),
