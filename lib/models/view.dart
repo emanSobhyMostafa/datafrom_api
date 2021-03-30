@@ -29,6 +29,7 @@ class Movie {
     this.video,
     this.voteAverage,
     this.voteCount,
+    this.isFav,
   });
 
   factory Movie.fromJson(Map<String, dynamic> json) {
