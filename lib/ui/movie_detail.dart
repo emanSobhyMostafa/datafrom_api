@@ -8,12 +8,7 @@ class Moviedetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Moviedetails"),
-          actions:[
-              
-          ]
-        ),
+        appBar: AppBar(title: Text("Moviedetails"), actions: []),
         body: Padding(
             padding: const EdgeInsets.all(8),
             child: Column(children: [
